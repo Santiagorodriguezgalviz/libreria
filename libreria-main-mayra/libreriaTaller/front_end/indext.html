@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>libroLab</title>
+    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <script src="bootstrap/js/bootstrap.js"></script> -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <body>
+    <!-- star container blanco -->
+    <div class="contenedor-blanco"></div>
+    <!-- container blanco end -->
+
+    <!-- barra de navegacion start -->
+    <div class="container-fluid fixed-top">
+      <div class="container topbar bg-primary d-none d-lg-block" >
+        <div class="d-flex justify-content-between">
+          <div class="top-info ps-2" >
+              <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white"> neiva huila </a></small>
+              <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">librerialibroLab@gmail.com</a></small>
+          </div>
+        </div>
+      </div>
+      <div class="container px-0">
+        <nav class="navbar navbar-light bg-white navbar-expand-xl">
+          <a href="index.html" class="navbar-brand"><h1 class="text display-6 tituloPrincipal" style="font-weight: bold; color: #ED760E;"><i class="fa-solid fa-book"></i> LibroLab</h1></a>
+          <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars text-primary"></span>
+          </button>
+          <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+            <div class="navbar-nav mx-auto">
+
+              <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">libro</a>
+                <div class="dropdown-menu bg-light m-0">                                
+                    <a href="libroRegistro.html" class="dropdown-item">Registro de Libro</a>
+                    <a href="listarLibro.html" class="dropdown-item">Lista de libros</a>
+                </div>
+              </div>
+              <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Usuario</a>
+                <div class="dropdown-menu bg-light m-0">                                
+                    <a href="usuarioRegistro.html" class="dropdown-item">Registro de Usuario</a>
+                    <a href="listarUsuario.html" class="dropdown-item">Lista de Usuario</a>
+                </div>
+              </div>
+              <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Prestamos</a>
+                <div class="dropdown-menu bg-light m-0">                                
+                    <a href="prestamoRegistro.html" class="dropdown-item">Registro de prestamos</a>
+                    <a href="listarPrestamo.html" class="dropdown-item">Lista de prestamos</a>
+                </div>
+              </div>
+              <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Multas</a>
+                <div class="dropdown-menu bg-light m-0">                                
+                    <a href="multaRegistro.html" class="dropdown-item">Registro de multas</a>
+                    <a href="listarMulta.html" class="dropdown-item">Lista de multas</a>
+                </div>
+              </div>
+              
+              
+              <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <div class="ms-auto d-none d-lg-flex">
+              <a class="btn btn-sm-square  btn-warning ms-2" href=""><i class="fab fa-facebook-f"></i></a>
+              <a class="btn btn-sm-square  btn-warning ms-2" href=""><i class="fab fa-twitter"></i></a>
+              <a class="btn btn-sm-square  btn-warning ms-2" href=""><i class="fab fa-linkedin-in"></i></a>
+              <a class="btn btn-sm-square  btn-warning ms-2" href=""><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="container-fluid py-5 mb-5 hero-header" >
+      <div class="container py-5">
+        <div class="row g-5 align-items-center">
+          <div class="col-md-12 col-lg-7 ">
+              <h1 class="mb-5 display-3 subtitulo" style="font-weight: bold; color: rgb(255, 255, 255); ">LibroLab</h1>
+              <h4 class="mb-3 text-white" > Descubre el laboratorio de tus sueños literarios en LibroLab: donde la imaginación 
+                se experimenta página a página en mundos diferentes." ¡Bienvenido a la aventura!"</h4>
+              <h1></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fin de la barra de navegacion -->
+
+    <!-- Start sección de características -->
+    <div class="container-fluid featurs py-5 ">
+      <div class="container py-5 " >
+        <div class="row g-4 " >
+          <div class="col-md-6 col-lg-6">
+            <div class="featurs-item text-center rounded bg-light p-4">
+              <div>
+                <i class="fas fa-user-shield fa-5x" style="color: #ED760E; "></i>
+              </div>
+              <div class="featurs-content text-center">
+                <h5>parámetros de seguridad</h5>
+                <p class="mb-0">100% seguro</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <div class="featurs-item text-center rounded bg-light p-4">
+              <div>
+                <i class="fa fa-phone-alt fa-5x " style="color: #ED760E;"></i>
+              </div>
+              <div class="featurs-content text-center">
+                <h5> apoyo 24/7</h5>
+                <p class="mb-0">Nuestro Soporte es siempre rápido</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <div class="featurs-item text-center rounded bg-light p-4">
+              <div>
+                <i class="fa-solid fa-calendar-days fa-5x" style="color: #ED760E;"></i>
+              </div>
+              <div class="featurs-content text-center">
+                <h5>Eventos y actividades</h5>
+                <p class="mb-0">Contamos con una gran variedad de actividades</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <div class="featurs-item text-center rounded bg-light p-4">
+              <div>
+                <i class="fa-solid fa-user fa-5x" style="color: #ED760E;"></i>
+              </div>
+              <div class="featurs-content text-center">
+                <h5> Servicios de asesoría</h5>
+                <p class="mb-0">Recomendaciones personalizadas basadas en los cliente.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section End de sección de características)-->
+
+    <!-- start container  sobre nosotros -->
+    <div class="container-fluid banner  my-5" style="background-color:  #f7f6f6;" >
+      <div class="container py-5">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6">
+            <div class="py-4">
+              <h1  class="text display-2" style="font-weight: bold; color: #ED760E">Nosotros</h1>
+              <p class="fw-normal display-3 text-dark mb-4"></p>
+              <p class="mb-4 text-dark">
+                Somos Un oasis para los amantes de la lectura descubre una 
+                Amplia selección de libros en todos los géneros.
+                Clubes de lectura, talleres y presentaciones.
+                Espacios acogedores para leer y disfrutar.
+                Cafetería para un café mientras lees.
+                Tu pasión por la lectura, nuestro mundo
+              <br>
+                ¡Visítenos!
+              </p>
+            </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="position-relative">
+                  <img src="img/libreriaa.jpg" class="img-fluid w-100 rounded" alt="">
+                <div class="d-flex align-items-center justify-content-center bg-white rounded-circle position-absolute" style="width: 140px; height: 140px; top: 0; left: 0;">
+                  <h1 style="font-size: 100px;"></h1>
+                  <div class="d-flex flex-column">
+                    <span class="h4 mb-0; text-center">Magia</span>
+                    <span class="h4 text-muted mb-0; text-center" >y</span>
+                    <span class="h4 mb-0; text-center">Divercion</span>
+                  </div>
+                </div>
+             </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  container  sobre nosotros end  -->
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Libreria</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <string-array name="tipo_usuario">
+        <item>lector</item>
+        <item>bibliotecario</item>
+        <item>administrador</item>
+    </string-array>
+    <string-array name="estado_prestamo">
+        <item>Prestamo</item>
+        <item>Entregado</item>
+        <item>Cancelado</item>
+    </string-array>
+    <string-array name="estado_multa">
+        <item>Pendiente</item>
+        <item>Pagado</item>
+    </string-array>
+</resources>

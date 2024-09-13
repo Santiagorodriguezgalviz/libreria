@@ -1,0 +1,29 @@
+Se instala la dependencia de entorno virtual
+pip install virtualenv
+Se crea el entorno virtual
+virtualenv nombre_entorno
+ejemplo
+virtualenv venv
+Python 3.12
+python -m venv nombre_entorno
+Para activar el entorno virtual
+mi_entorno\Scripts\actívate
+ejemplo
+venv\Scripts\actívate
+dentro del archivo requirements.txt están
+las depencias
+pip install -r requirements.txt
+para ejecutar el proyecto se requiere conocer la dirección ip del servidor
+en Windows
+ipconfig
+para ejecutar el proyecto con django
+Python runserve.py dirección_ip:puerto
+python manage.py runserver 10.192.92.23:8000
+
+los pasos que se requieren son
+activar el entorno
+venv\Scripts\actívate
+conocer la dirección ip
+ipconfig
+Python runserve.py dirección_ip:puerto
+
